@@ -1,0 +1,55 @@
+
+
+@import "tailwindcss";
+
+@theme {
+  --color-main-bg: var(--bg-app);
+  --color-main-card: var(--bg-card);
+  --color-main-text: var(--text-app);
+  --color-main-border: var(--border-app);
+}
+
+/* ── VARIABLE BASE (Default Mode Terang) ── */
+:root {
+  --bg-app: #F9F6F0;       
+  --bg-card: #ffffff;      
+  --text-app: #2F3E36;     
+  --border-app: #f3f4f6;   
+  
+  --nav-bg: #7A9D82;
+  --welcome-from: #7A9D82;
+  --welcome-to: #8AAD92;
+}
+
+/* ── MODE GELAP (Ketika class .dark aktif di div pembungkus) ── */
+.dark {
+  --bg-app: #0f172a;       
+  --bg-card: #1e293b;      
+  --border-app: #334155;   
+  --text-app: #f1f5f9;     
+  
+  /* Kombinasi warna gelap dashboard */
+  --nav-bg: #111827;       
+  --welcome-from: #1e3a8a; 
+  --welcome-to: #0f766e;
+
+  
+}
+
+/* ── GLOBAL STYLE FORCING ── */
+/* Menghapus target html/body langsung, dialihkan ke utility pembungkus */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark p, .dark span {
+  color: var(--text-app) !important;
+}
+
+/* Sambungkan variabel dinamis Navbar dan Banner ke class Tailwind */
+nav {
+  background-color: var(--nav-bg) !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Pastikan gradasi Welcome Banner membaca variabel CSS */
+.bg-gradient-to-r {
+  --tw-gradient-from: var(--welcome-from) !important;
+  --tw-gradient-to: var(--welcome-to) !important;
+}
