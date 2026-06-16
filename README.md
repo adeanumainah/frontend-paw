@@ -442,3 +442,9 @@ Melalui pengembangan proyek PawCare, diperoleh pengalaman dalam:
 PawCare dikembangkan sebagai proyek pembelajaran Full Stack Web Development dengan fokus pada implementasi sistem manajemen data yang aman, responsif, dan mudah digunakan.
 
 Proyek ini menerapkan praktik pengembangan modern seperti JWT Authentication, Role Based Access Control (RBAC), REST API Architecture, serta desain antarmuka yang responsif untuk meningkatkan pengalaman pengguna.
+
+---
+ERD
+
+<img width="844" height="832" alt="erd_pawcare" src="https://github.com/user-attachments/assets/1b1d060e-a78c-4c05-ac78-68f03d8d5d52" />
+
